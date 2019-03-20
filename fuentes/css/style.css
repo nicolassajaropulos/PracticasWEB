@@ -1,0 +1,12 @@
+@font-face {
+    font-family: Dosis;
+    src: url("../fonts/Roboto/Roboto-Bold.ttf");
+}
+
+#textoReferenciado {
+    font-family: 'Roboto', sans-serif;
+}
+
+#textoDescargado {
+    font-family: 'Dosis', sans-serif;
+}
