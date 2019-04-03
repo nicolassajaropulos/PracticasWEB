@@ -1,20 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Arrastrar y Soltar</title>
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <h2>Arrastrar y Soltar</h2>
-    <div id="div1">
-        <img src="img/mugiwara.png" height="31" width="88" draggable="true" ondragstart="drag(event);" id="arrastre1">
-        <img src="img/mugiwara.png" height="31" width="88" draggable="true" ondragstart="drag(event);" id="arrastre2">
-        <img src="img/mugiwara.png" height="31" width="88" draggable="true" ondragstart="drag(event);" id="arrastre3">
-        <img src="img/mugiwara.png" height="31" width="88" draggable="true" ondragstart="drag(event);" id="arrastre4">
+    <div
+      id="div1"
+      class="dropzone"
+      ondragover="allowDrop(event);"
+      ondrop="drop(event);"
+    >
+      <img
+        src="img/mugiwara.png"
+        height="31"
+        width="88"
+        draggable="true"
+        ondragstart="drag(event);"
+        id="arrastre1"
+      />
+      <img
+        src="img/mugiwara.png"
+        height="31"
+        width="88"
+        draggable="true"
+        ondragstart="drag(event);"
+        id="arrastre2"
+      />
+      <img
+        src="img/mugiwara.png"
+        height="31"
+        width="88"
+        draggable="true"
+        ondragstart="drag(event);"
+        id="arrastre3"
+      />
+      <img
+        src="img/mugiwara.png"
+        height="31"
+        width="88"
+        draggable="true"
+        ondragstart="drag(event);"
+        id="arrastre4"
+      />
     </div>
-    <div id="div2" ondragover="allowDrop(event);" ondrop="drop(event);">
-    </div>
-</body>
+    <div
+      id="div2"
+      class="dropzone"
+      ondragover="allowDrop(event);"
+      ondrop="drop(event);"
+    ></div>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
